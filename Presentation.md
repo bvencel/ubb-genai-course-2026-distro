@@ -78,15 +78,22 @@ Pieces to help you approach an AI-native SDLC:
 
 ---
 
-###### GenAI across software delivery
+# GenAI across software delivery
+
+Agent tasks within the SDLC
+
+<!-- Where GenAI fits in software delivery and how a workflow can assign work to agents -->
+
+---
+
 ## The SDLC
 
 **Software development life cycle (SDLC):** building and maintaining software
 
 ```text
-Plan → Requirements → Design → Build → Test
-                                        |
-Improve ← Operate ← Deploy ←────────────┘
+Plan → Requirements → Design → Build → Test → Deploy → Operate
+  ↑                                                        |
+  └────────────────── Improve / feedback ──────────────────┘
 ```
 
 GenAI can assist at every stage
@@ -111,7 +118,14 @@ People set acceptance criteria and allowed actions; the release owner accepts th
 
 ---
 
-###### Model behavior and context
+# Model behavior and context
+
+Token generation within a finite context window
+
+<!-- An agent's behavior depends on how the model generates output and what information it receives -->
+
+---
+
 ## How an LLM generates output
 
 **Large language model (LLM):** generates tokens from context
@@ -240,7 +254,13 @@ Documents → passages → search by question
 
 ---
 
-###### Agent interfaces and configuration
+# Agent interfaces and configuration
+
+Project instructions and tool connections
+
+<!-- Prepare an agent for a project by choosing an interface, providing instructions and connecting the tools it needs. -->
+---
+
 ## Choose an interface for the task
 
 | Need                                                  | Interface to consider        |
@@ -351,7 +371,14 @@ Enforce authentication and business rules in the service
 
 ---
 
-###### Security and access
+# Security and access
+
+Tool permissions and untrusted input
+
+<!-- Giving an agent tools also means deciding what it can access and how to contain mistakes or malicious instructions. -->
+
+---
+
 ## Access limits
 
 Wrong instruction + tool access can cause real damage
@@ -405,7 +432,13 @@ Tools: [garak](https://github.com/NVIDIA/garak), [Promptfoo](https://www.promptf
 
 ---
 
-###### Specifications, verification and delivery
+# Delivering a change
+
+Vertical slices with acceptance checks
+
+<!-- Follow a task from a testable specification through small slices, verification and release. -->
+---
+
 ## A testable specification
 
 For each slice, define:
@@ -515,23 +548,14 @@ Reverting code may leave data changes behind
 
 ---
 
-## Check what delays delivery
+# Evidence and work experience
 
-| Stage                        | What to measure                    |
-| ---------------------------- | ---------------------------------- |
-| Builds and tests             | Queue time, flaky checks           |
-| Review and security          | Review wait, unresolved findings   |
-| Dependencies and maintenance | Update work, unresolved defects    |
-| Release                      | Approval wait, failed deployments  |
-| Operations                   | Incident load, unresolved failures |
+Sources and limits of each claim
 
-Measure where work waits after generation gets faster
-
-[Adam Bender's talk](https://www.youtube.com/watch?v=2n41YjR5QfU)
+<!-- Examine what studies measure, what vendors report and what I have observed in practice. -->
 
 ---
 
-###### Evidence and delivery costs
 ## Measured productivity
 
 [METR, early 2025](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/): 16 experienced open-source developers, 246 tasks in familiar repositories
@@ -619,6 +643,14 @@ Tool limits bound agent work. Review capacity determines how much output you can
 
 ---
 
+# Delivery effort and cost
+
+Setup effort and cost per accepted change
+
+<!-- Need to account for project setup and the time and money spent getting each change accepted. -->
+
+---
+
 ## Setting up delivery takes time
 
 - Tailor context and allowed actions to the project
@@ -649,6 +681,22 @@ The next implementation needs context that reflects what shipped
 > **My company experience:** There is a desire for this fully automatic system. Still a dream, too early to share technical details
 
 </div>
+
+---
+
+## Check what delays delivery
+
+| Stage                        | What to measure                    |
+| ---------------------------- | ---------------------------------- |
+| Builds and tests             | Queue time, flaky checks           |
+| Review and security          | Review wait, unresolved findings   |
+| Dependencies and maintenance | Update work, unresolved defects    |
+| Release                      | Approval wait, failed deployments  |
+| Operations                   | Incident load, unresolved failures |
+
+Measure where work waits after generation gets faster
+
+[Adam Bender's talk](https://www.youtube.com/watch?v=2n41YjR5QfU)
 
 ---
 
@@ -693,7 +741,14 @@ Put stable sequences of commands in reviewed scripts
 
 ---
 
-###### Judgment and personal rules
+# Judgment and personal rules
+
+Checking claims and choosing what to delegate
+
+<!-- Look at how to question an agent's claims and decide which work we want to keep for ourselves. -->
+
+---
+
 ## When conversation misleads
 
 **Anthropomorphism:** attributing human qualities or motives to a system\
