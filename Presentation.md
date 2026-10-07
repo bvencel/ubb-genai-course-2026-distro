@@ -899,8 +899,7 @@ We have not solved AI-native delivery here. We examined pieces you can apply:
 ## Presentation materials
 
 - [github.com/bvencel/ubb-genai-course-2026-distro](https://github.com/bvencel/ubb-genai-course-2026-distro)
-  - [Presentation.md](https://github.com/bvencel/ubb-genai-course-2026-distro/blob/main/Presentation.md)
-  - [Presentation.html](https://github.com/bvencel/ubb-genai-course-2026-distro/blob/main/Presentation.html)
+  - [Presentation.html](https://bvencel.github.io/ubb-genai-course-2026-distro/Presentation.html)
   - Present or export Markdown with [Marp](https://marp.app/)
 - Contact me on [linkedin.com/in/bvencel/](https://www.linkedin.com/in/bvencel/)
 
