@@ -64,7 +64,7 @@ small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
 <h1 id="generative-ai-across-the-software-development-life-cycle">Generative AI across the software development life cycle</h1>
-<p>Babes-Bolyai University<br />
+<p>Babeș-Bolyai University<br />
 CS master's students</p>
 <p>Vencel Biro - October 2026</p>
 </section>
@@ -318,6 +318,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="genai-across-software-delivery-1">GenAI across software delivery</h6>
 <h2 id="the-sdlc">The SDLC</h2>
 <p><strong>Software development life cycle (SDLC):</strong> building and maintaining software</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-text">Plan → Requirements → Design → Build → Test → Deploy → Operate
@@ -382,6 +383,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="genai-across-software-delivery-2">GenAI across software delivery</h6>
 <h2 id="ai-assisted-and-ai-native-sdlc">AI-assisted and AI-native SDLC</h2>
 <p>AI integration varies by task and SDLC stage</p>
 <table>
@@ -519,6 +521,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="model-behavior-and-context-1">Model behavior and context</h6>
 <h2 id="how-an-llm-generates-output">How an LLM generates output</h2>
 <p><strong>Large language model (LLM):</strong> generates tokens from context</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-text">Next token probabilities → select → append → repeat
@@ -585,6 +588,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="model-behavior-and-context-2">Model behavior and context</h6>
 <h2 id="everything-around-the-model">Everything around the model</h2>
 <table>
 <thead>
@@ -674,6 +678,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="model-behavior-and-context-3">Model behavior and context</h6>
 <h2 id="the-context-window">The context window</h2>
 <p><a href="https://developers.openai.com/api/docs/guides/conversation-state"><strong>Context:</strong></a> information available for the current generation</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">context = [
@@ -749,6 +754,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="model-behavior-and-context-4">Model behavior and context</h6>
 <h2 id="how-conversation-history-grows">How conversation history grows</h2>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-text">Turn 1: rules + prompt 1
 Turn 2: rules + prompt 1 + reply 1 + prompt 2
@@ -821,6 +827,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="model-behavior-and-context-5">Model behavior and context</h6>
 <h2 id="when-to-retrieve-information">When to retrieve information</h2>
 <p><strong>Retrieval-augmented generation (RAG):</strong> find external information and add it to context</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-text">Documents → passages → search by question
@@ -896,6 +903,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="model-behavior-and-context-6">Model behavior and context</h6>
 <h2 id="when-to-compact-or-start-fresh">When to compact or start fresh</h2>
 <p><a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"><strong>Compaction:</strong></a> reduce active history, often through summarization</p>
 <ul>
@@ -1028,6 +1036,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="agent-interfaces-and-configuration-1">Agent interfaces and configuration</h6>
 <h2 id="choose-an-interface-for-the-task">Choose an interface for the task</h2>
 <table>
 <thead>
@@ -1117,6 +1126,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="agent-interfaces-and-configuration-2">Agent interfaces and configuration</h6>
 <h2 id="project-instructions-with-agentsmd">Project instructions with <code>AGENTS.md</code></h2>
 <p>Use <a href="https://learn.chatgpt.com/docs/agent-configuration/agents-md"><code>AGENTS.md</code></a> to keep recurring project guidance out of each prompt</p>
 <ul>
@@ -1184,6 +1194,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="agent-interfaces-and-configuration-3">Agent interfaces and configuration</h6>
 <h2 id="when-to-create-a-skill">When to create a skill</h2>
 <p><a href="https://www.youtube.com/watch?v=BsJGo1wFTvQ"><strong>Skill:</strong></a> folder with <code>SKILL.md</code> and optional supporting files</p>
 <p>Use a skill for repeated procedures, such as change review</p>
@@ -1255,6 +1266,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="agent-interfaces-and-configuration-4">Agent interfaces and configuration</h6>
 <h2 id="keep-instructions-small">Keep instructions small</h2>
 <div class="callout context">
 <blockquote>
@@ -1330,6 +1342,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="agent-interfaces-and-configuration-5">Agent interfaces and configuration</h6>
 <h2 id="mcp-connects-tools-and-data">MCP connects tools and data</h2>
 <p><a href="https://modelcontextprotocol.io/docs/learn/architecture"><strong>Model Context Protocol (MCP):</strong></a> shared interface for external capabilities</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-text">Host application → MCP client → MCP server → service / data
@@ -1397,6 +1410,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="agent-interfaces-and-configuration-6">Agent interfaces and configuration</h6>
 <h2 id="where-to-use-mcp">Where to use MCP</h2>
 <table>
 <thead>
@@ -1539,6 +1553,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="security-and-access-1">Security and access</h6>
 <h2 id="access-limits">Access limits</h2>
 <p>Wrong instruction + tool access can cause real damage</p>
 <ul>
@@ -1606,6 +1621,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="security-and-access-2">Security and access</h6>
 <h2 id="prompt-injection">Prompt injection</h2>
 <p><a href="https://developers.openai.com/api/docs/guides/agent-builder-safety"><strong>Prompt injection:</strong></a> untrusted content trying to redirect the agent</p>
 <p>An issue or retrieved page:</p>
@@ -1674,6 +1690,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="security-and-access-3">Security and access</h6>
 <h2 id="restrict-system-access">Restrict system access</h2>
 <ul>
 <li>Run risky workflows in restricted containers or virtual machines</li>
@@ -1803,6 +1820,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="delivering-a-change-1">Delivering a change</h6>
 <h2 id="a-testable-specification">A testable specification</h2>
 <p>For each slice, define:</p>
 <ul>
@@ -1871,6 +1889,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="delivering-a-change-2">Delivering a change</h6>
 <h2 id="review-the-design">Review the design</h2>
 <p>Ask the agent to propose a design, then inspect its failure cases</p>
 <table>
@@ -1956,6 +1975,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="delivering-a-change-3">Delivering a change</h6>
 <h2 id="small-vertical-slices">Small vertical slices</h2>
 <p><a href="https://www.jimmybogard.com/vertical-slice-architecture/"><strong>Vertical slice:</strong></a> one use case through all required layers</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-text">One use case
@@ -2028,6 +2048,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="delivering-a-change-4">Delivering a change</h6>
 <h2 id="subagents-for-bounded-investigations">Subagents for bounded investigations</h2>
 <p><a href="https://learn.chatgpt.com/docs/agent-configuration/subagents"><strong>Subagent:</strong></a> separate run and context, focused result</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-text">Use two subagents: one to inspect access checks,
@@ -2096,6 +2117,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="delivering-a-change-5">Delivering a change</h6>
 <h2 id="cheap-verification">Cheap verification</h2>
 <table>
 <thead>
@@ -2183,6 +2205,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="delivering-a-change-6">Delivering a change</h6>
 <h2 id="independent-evidence">Independent evidence</h2>
 <p>Code and tests can share the same wrong assumption</p>
 <ul>
@@ -2247,6 +2270,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="delivering-a-change-7">Delivering a change</h6>
 <h2 id="release-and-operation">Release and operation</h2>
 <ul>
 <li>Record what changed and attach check results</li>
@@ -2371,6 +2395,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="evidence-and-work-experience-1">Evidence and work experience</h6>
 <h2 id="measured-productivity">Measured productivity</h2>
 <p><a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/">METR, early 2025</a>: 16 experienced open-source developers, 246 tasks in familiar repositories</p>
 <table>
@@ -2454,6 +2479,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="evidence-and-work-experience-2">Evidence and work experience</h6>
 <h2 id="code-you-cannot-explain">Code you cannot explain</h2>
 <p><a href="https://www.anthropic.com/research/AI-assistance-coding-skills">Anthropic randomized study, 2026</a>: 52 mostly junior engineers learning an unfamiliar Python library</p>
 <ul>
@@ -2522,6 +2548,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="evidence-and-work-experience-3">Evidence and work experience</h6>
 <h2 id="documented-vendor-experiments">Documented vendor experiments</h2>
 <table>
 <thead>
@@ -2603,6 +2630,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="evidence-and-work-experience-4">Evidence and work experience</h6>
 <h2 id="what-i-see-in-demos">What I see in demos</h2>
 <div class="callout lesson">
 <blockquote>
@@ -2672,6 +2700,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="evidence-and-work-experience-5">Evidence and work experience</h6>
 <h2 id="reality-checks-from-my-work">Reality checks from my work</h2>
 <p>Tool limits bound agent work. Review capacity determines how much output you can accept</p>
 <div class="callout lesson">
@@ -2801,6 +2830,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="delivery-effort-and-cost-1">Delivery effort and cost</h6>
 <h2 id="setting-up-delivery-takes-time">Setting up delivery takes time</h2>
 <ul>
 <li>Tailor context and allowed actions to the project</li>
@@ -2868,6 +2898,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="delivery-effort-and-cost-2">Delivery effort and cost</h6>
 <h2 id="the-fully-automatic-delivery-dream">The fully automatic delivery dream</h2>
 <p>The next implementation needs context that reflects what shipped</p>
 <ol>
@@ -2938,6 +2969,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="delivery-effort-and-cost-3">Delivery effort and cost</h6>
 <h2 id="check-what-delays-delivery">Check what delays delivery</h2>
 <table>
 <thead>
@@ -3027,6 +3059,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="delivery-effort-and-cost-4">Delivery effort and cost</h6>
 <h2 id="cost-per-accepted-change">Cost per accepted change</h2>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-text">(model and tool spend + cost of human time) / accepted changes
 </code></pre>
@@ -3100,6 +3133,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="delivery-effort-and-cost-5">Delivery effort and cost</h6>
 <h2 id="save-repeatable-work-as-scripts">Save repeatable work as scripts</h2>
 <p>Put stable sequences of commands in reviewed scripts</p>
 <p><strong>Example:</strong> one script runs build, tests and formatting checks</p>
@@ -3227,6 +3261,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="judgment-and-personal-rules-1">Judgment and personal rules</h6>
 <h2 id="when-conversation-misleads">When conversation misleads</h2>
 <p><strong>Anthropomorphism:</strong> attributing human qualities or motives to a system<br />
 <strong>Sycophancy:</strong> following your framing and agreeing too easily</p>
@@ -3310,6 +3345,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="judgment-and-personal-rules-2">Judgment and personal rules</h6>
 <h2 id="personal-rules">Personal rules</h2>
 <p>Keep practicing the skills and judgment you want to retain</p>
 <div class="callout advice">
@@ -3379,6 +3415,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="judgment-and-personal-rules-3">Judgment and personal rules</h6>
 <h2 id="conclusions">Conclusions</h2>
 <p>We have not solved AI-native delivery here. We examined pieces you can apply:</p>
 <ul>
@@ -3445,6 +3482,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h2 id="thank-you">Thank you.</h2>
 <h2 id="discussion">Discussion</h2>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="50" data-paginate="true" data-theme="default" data-style="section {
@@ -3572,6 +3610,7 @@ section .callout blockquote { border-left: 6px solid var(--tone); }
 small { font-size: 18px; line-height: 1.25; color: #52606d; }
 a { color: #285b8c; }
 ;" data-marpit-pagination-total="58" data-size="16:9">
+<h6 id="reference-practice-and-course-materials-1">Reference: practice and course materials</h6>
 <h2 id="presentation-materials">Presentation materials</h2>
 <ul>
 <li><a href="https://github.com/bvencel/ubb-genai-course-2026-distro">github.com/bvencel/ubb-genai-course-2026-distro</a>

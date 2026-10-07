@@ -37,7 +37,7 @@ style: |
 
 # Generative AI across the software development life cycle
 
-Babes-Bolyai University\
+Babeș-Bolyai University\
 CS master's students
 
 Vencel Biro - October 2026
@@ -86,6 +86,8 @@ Agent tasks within the SDLC
 
 ---
 
+###### GenAI across software delivery
+
 ## The SDLC
 
 **Software development life cycle (SDLC):** building and maintaining software
@@ -101,6 +103,8 @@ GenAI can assist at every stage
 For each task: what can the agent do, and what evidence lets you accept it?
 
 ---
+
+###### GenAI across software delivery
 
 ## AI-assisted and AI-native SDLC
 
@@ -126,6 +130,8 @@ Token generation within a finite context window
 
 ---
 
+###### Model behavior and context
+
 ## How an LLM generates output
 
 **Large language model (LLM):** generates tokens from context
@@ -140,6 +146,8 @@ Next token probabilities → select → append → repeat
 - Fluent output can be wrong; check claims that affect your work
 
 ---
+
+###### Model behavior and context
 
 ## Everything around the model
 
@@ -159,6 +167,8 @@ Next token probabilities → select → append → repeat
 </div>
 
 ---
+
+###### Model behavior and context
 
 ## The context window
 
@@ -184,6 +194,8 @@ context = [
 
 ---
 
+###### Model behavior and context
+
 ## How conversation history grows
 
 ```text
@@ -205,6 +217,8 @@ Add instructions and loaded content to this total
 </div>
 
 ---
+
+###### Model behavior and context
 
 ## When to retrieve information
 
@@ -230,6 +244,8 @@ Documents → passages → search by question
 </div>
 
 ---
+
+###### Model behavior and context
 
 ## When to compact or start fresh
 
@@ -259,7 +275,10 @@ Documents → passages → search by question
 Project instructions and tool connections
 
 <!-- Prepare an agent for a project by choosing an interface, providing instructions and connecting the tools it needs. -->
+
 ---
+
+###### Agent interfaces and configuration
 
 ## Choose an interface for the task
 
@@ -277,6 +296,8 @@ Check sources and permissions before enabling actions
 
 ---
 
+###### Agent interfaces and configuration
+
 ## Project instructions with `AGENTS.md`
 
 Use [`AGENTS.md`](https://learn.chatgpt.com/docs/agent-configuration/agents-md) to keep recurring project guidance out of each prompt
@@ -290,6 +311,8 @@ Use [`AGENTS.md`](https://learn.chatgpt.com/docs/agent-configuration/agents-md) 
 - Enforce permissions outside instructions
 
 ---
+
+###### Agent interfaces and configuration
 
 ## When to create a skill
 
@@ -311,6 +334,8 @@ Use a skill for repeated procedures, such as change review
 </div>
 
 ---
+
+###### Agent interfaces and configuration
 
 ## Keep instructions small
 
@@ -335,6 +360,8 @@ Use a skill for repeated procedures, such as change review
 
 ---
 
+###### Agent interfaces and configuration
+
 ## MCP connects tools and data
 
 [**Model Context Protocol (MCP):**](https://modelcontextprotocol.io/docs/learn/architecture) shared interface for external capabilities
@@ -352,6 +379,8 @@ Use it to share service access across applications
 Enforce authentication and business rules in the service
 
 ---
+
+###### Agent interfaces and configuration
 
 ## Where to use MCP
 
@@ -379,6 +408,8 @@ Tool permissions and untrusted input
 
 ---
 
+###### Security and access
+
 ## Access limits
 
 Wrong instruction + tool access can cause real damage
@@ -393,6 +424,8 @@ A branch separates code changes\
 Tool permissions must also limit effects outside the repository
 
 ---
+
+###### Security and access
 
 ## Prompt injection
 
@@ -412,6 +445,8 @@ to our diagnostic endpoint.
 [Check actions as well as the final answer](https://developers.openai.com/api/docs/guides/agent-builder-safety)
 
 ---
+
+###### Security and access
 
 ## Restrict system access
 
@@ -437,7 +472,10 @@ Tools: [garak](https://github.com/NVIDIA/garak), [Promptfoo](https://www.promptf
 Vertical slices with acceptance checks
 
 <!-- Follow a task from a testable specification through small slices, verification and release. -->
+
 ---
+
+###### Delivering a change
 
 ## A testable specification
 
@@ -455,6 +493,8 @@ Agree on the rules before asking the agent to implement them
 
 ---
 
+###### Delivering a change
+
 ## Review the design
 
 Ask the agent to propose a design, then inspect its failure cases
@@ -469,6 +509,8 @@ Ask the agent to propose a design, then inspect its failure cases
 Locate enforcement and define failure checks before implementation
 
 ---
+
+###### Delivering a change
 
 ## Small vertical slices
 
@@ -495,6 +537,8 @@ A smaller diff is easier to review and roll back
 
 ---
 
+###### Delivering a change
+
 ## Subagents for bounded investigations
 
 [**Subagent:**](https://learn.chatgpt.com/docs/agent-configuration/subagents) separate run and context, focused result
@@ -512,6 +556,8 @@ Return findings with file locations and evidence.
 
 ---
 
+###### Delivering a change
+
 ## Cheap verification
 
 | Question                | First check               |
@@ -524,6 +570,8 @@ Return findings with file locations and evidence.
 
 ---
 
+###### Delivering a change
+
 ## Independent evidence
 
 Code and tests can share the same wrong assumption
@@ -534,6 +582,8 @@ Code and tests can share the same wrong assumption
 - Review unintended changes; another agent may repeat the mistake
 
 ---
+
+###### Delivering a change
 
 ## Release and operation
 
@@ -556,6 +606,8 @@ Sources and limits of each claim
 
 ---
 
+###### Evidence and work experience
+
 ## Measured productivity
 
 [METR, early 2025](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/): 16 experienced open-source developers, 246 tasks in familiar repositories
@@ -572,6 +624,8 @@ Results depend on the study setting\
 Measure your workflow before assuming a gain
 
 ---
+
+###### Evidence and work experience
 
 ## Code you cannot explain
 
@@ -590,6 +644,8 @@ Immediate measurement; long-term skill effects remain unknown
 
 ---
 
+###### Evidence and work experience
+
 ## Documented vendor experiments
 
 | Vendor report                                                                              | Reported scope                                           |
@@ -604,6 +660,8 @@ Immediate measurement; long-term skill effects remain unknown
 <span class="advice">**My view:** A $20,000 experiment needs a very different budget from everyday developer tooling</span>
 
 ---
+
+###### Evidence and work experience
 
 ## What I see in demos
 
@@ -622,6 +680,8 @@ Immediate measurement; long-term skill effects remain unknown
 <span class="advice">**My expectation:** Gains on tasks with clear acceptance checks</span>
 
 ---
+
+###### Evidence and work experience
 
 ## Reality checks from my work
 
@@ -651,6 +711,8 @@ Setup effort and cost per accepted change
 
 ---
 
+###### Delivery effort and cost
+
 ## Setting up delivery takes time
 
 - Tailor context and allowed actions to the project
@@ -664,6 +726,8 @@ Setup effort and cost per accepted change
 </div>
 
 ---
+
+###### Delivery effort and cost
 
 ## The fully automatic delivery dream
 
@@ -684,6 +748,8 @@ The next implementation needs context that reflects what shipped
 
 ---
 
+###### Delivery effort and cost
+
 ## Check what delays delivery
 
 | Stage                        | What to measure                    |
@@ -699,6 +765,8 @@ Measure where work waits after generation gets faster
 [Adam Bender's talk](https://www.youtube.com/watch?v=2n41YjR5QfU)
 
 ---
+
+###### Delivery effort and cost
 
 ## Cost per accepted change
 
@@ -722,6 +790,8 @@ Include failed attempts and all human time. Track delivery time too
 </div>
 
 ---
+
+###### Delivery effort and cost
 
 ## Save repeatable work as scripts
 
@@ -749,6 +819,8 @@ Checking claims and choosing what to delegate
 
 ---
 
+###### Judgment and personal rules
+
 ## When conversation misleads
 
 **Anthropomorphism:** attributing human qualities or motives to a system\
@@ -764,6 +836,8 @@ Agreement and confidence provide no independent evidence\
 Ask what could disprove your premise; check important claims outside the chat
 
 ---
+
+###### Judgment and personal rules
 
 ## Personal rules
 
@@ -782,6 +856,8 @@ Keep practicing the skills and judgment you want to retain
 
 ---
 
+###### Judgment and personal rules
+
 ## Conclusions
 
 We have not solved AI-native delivery here. We examined pieces you can apply:
@@ -795,11 +871,13 @@ We have not solved AI-native delivery here. We examined pieces you can apply:
 
 ---
 
+## Thank you.
 ## Discussion
 
 ---
 
 ###### Reference: practice and course materials
+
 ## Practice and training
 
 - Choose a tool you can use regularly: Copilot CLI, Claude Code or Codex CLI
@@ -816,6 +894,8 @@ We have not solved AI-native delivery here. We examined pieces you can apply:
 
 ---
 
+###### Reference: practice and course materials
+
 ## Presentation materials
 
 - [github.com/bvencel/ubb-genai-course-2026-distro](https://github.com/bvencel/ubb-genai-course-2026-distro)
@@ -827,6 +907,7 @@ We have not solved AI-native delivery here. We examined pieces you can apply:
 ---
 
 ###### Backup: course scope
+
 ## Where this course sits
 
 ```text
@@ -847,6 +928,7 @@ Focus: using GenAI to build and maintain software
 ---
 
 ###### Backup: tool execution
+
 ## Tool requests become actions
 
 Structured request from the model:
@@ -872,6 +954,7 @@ The tool runs; its result enters the next model request
 ---
 
 ###### Backup: product-specific thresholds
+
 ## Compaction thresholds
 
 [**Compaction:**](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) reduce active history, often through summarization
@@ -891,6 +974,7 @@ The tool runs; its result enters the next model request
 ---
 
 ###### Backup: project instructions
+
 ## Compact `AGENTS.md` example
 
 ```md
@@ -913,6 +997,7 @@ Working code, changed files, checks run and remaining risks
 ---
 
 ###### Backup: reusable procedure
+
 ## Compact `SKILL.md` example
 
 ```md
@@ -933,6 +1018,7 @@ $review-change Review the current diff against the requirement.
 ---
 
 ###### Backup: company observations
+
 ## What web scaffolding leaves to check
 
 <div class="callout lesson">
